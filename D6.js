@@ -102,7 +102,7 @@ function epify(s) {
   const sSplit = s.split(" ");
   if (sSplit[0] === epicode) {
     return s;
-  } else if (sSplit[0] !== epicode) {
+  } else {
     sSplit.unshift(epicode);
     s = "";
     for (let i = 0; i < sSplit.length; i++) {
@@ -112,9 +112,9 @@ function epify(s) {
   }
 }
 
-const result5 = epify("Ciao a tutti");
+const result5 = epify("EPICODE Ciao a tutti");
 
-//console.log(result5);
+console.log(result5);
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
