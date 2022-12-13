@@ -144,12 +144,33 @@ function check3and7(num) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const es7 = `stringa da inseire`;
+
+function reverseString(n) {
+  return (risultato = n.split(``).reverse().join(``));
+}
+
+const nuovaStringa = reverseString(es7);
+console.log(nuovaStringa);
+
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function upperFirst(string1) {
+  const splitstring = string1.split(` `);
+  for (let i = 0; i < splitstring.length; i++) {
+    splitstring[i] =
+      splitstring[i].charAt(0).ToUpperCase() + splitstring[i].substring(1);
+  }
+  return splitstring.join(` `);
+}
+
+let upperdWord = upperFirst(` `);
+console.log(upperdWord);
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
